@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Konversi Suhu Celsius ke Fahrenheit</title>
+   <link rel="stylesheet" href="css/style.css">
+ 
+</head>
+<body>
+  <header>
+  <h1>Konversi Suhu Celsius ke Fahrenheit</h1>
+</header>
+  <div class="container">
+    <div class="input-group">
+      <label for="celsius">Celsius:</label>
+      <input type="number" id="celsius" placeholder="Masukkan suhu dalam Celsius" oninput="convertCelsiusToFahrenheit()">
+    </div>
+    <div class="input-group">
+      <label for="fahrenheit">Fahrenheit:</label>
+      <input type="number" id="fahrenheit" placeholder="Masukkan suhu dalam Fahrenheit" oninput="convertFahrenheitToCelsius()">
+    </div>
+    <div class="btn-group">
+     <button class="btn btn-reset" onclick="reset()">Reset</button>
+      <button class="btn btn-reverse" onclick="reverse()">Reverse</button>
+    </div>
+    <div class="result">
+      <p id="result"></p>
+    </div>
+    <div class="rumus">
+    <h4>Suhu S dalam derajat fahrenheit (°f) sama dengan suhu s dalam derajat celcius (°C) kali 9/5 tambah 32</h4>
+    <h6>- S(°F) = (S(°C)x 9/5)  + 32.</h6>
+    <h6>atau</h6>
+    <h6>- S(°F) = (S(°C)x 1.8)  + 32.</h6>
+    <h4>sebaliknya jika ingin fahrenheit ke celcius kita tinggal hitung dengan formula</h3>
+    <h6>- Celsius = (Fahrenheit - 32) * 5/9</h6>
+    <h4>ATTENTION!! CARA PEMAKAIAN KONVERSI INI KALIAN TINGGAL MEMASUKAN ANGKA SAJA KEDALAM KOLOM JIKA INGIN KE CELSIUS KE F MASUKAN ANGKANYA</h4>
+    <H4>SEBALIKNYA JIKA INGIN FAHRENHEIT KE C MASUKAN KE KOLOM NYA TERIMAKASIH</H4>
+  </div>
+      
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
